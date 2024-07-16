@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\**" />
+    <EmbeddedResource Remove="Views\**" />
+    <None Remove="Views\**" />
+    <Page Remove="Views\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Images\bad.png" />
+    <None Remove="Images\can-play.png" />
+    <None Remove="Images\cant-play.png" />
+    <None Remove="Images\default-hover.png" />
+    <None Remove="Images\default.png" />
+    <None Remove="Images\exit-hover.png" />
+    <None Remove="Images\exit.png" />
+    <None Remove="Images\good.png" />
+    <None Remove="Images\minimize-hover.png" />
+    <None Remove="Images\minimize.png" />
+    <None Remove="Images\play.png" />
+    <None Remove="Images\return-hover.png" />
+    <None Remove="Images\return.png" />
+    <None Remove="Images\save-hover.png" />
+    <None Remove="Images\save.png" />
+    <None Remove="Images\user-gear-hover.png" />
+    <None Remove="Images\user-gear.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Themes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="RestSharp" Version="111.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\bad.png" />
+    <Resource Include="Images\can-play.png" />
+    <Resource Include="Images\cant-play.png" />
+    <Resource Include="Images\default-hover.png" />
+    <Resource Include="Images\default.png" />
+    <Resource Include="Images\exit-hover.png" />
+    <Resource Include="Images\exit.png" />
+    <Resource Include="Images\good.png" />
+    <Resource Include="Images\minimize-hover.png" />
+    <Resource Include="Images\minimize.png" />
+    <Resource Include="Images\play.png" />
+    <Resource Include="Images\return-hover.png" />
+    <Resource Include="Images\return.png" />
+    <Resource Include="Images\save-hover.png" />
+    <Resource Include="Images\save.png" />
+    <Resource Include="Images\user-gear-hover.png" />
+    <Resource Include="Images\user-gear.png" />
+  </ItemGroup>
+
+</Project>
